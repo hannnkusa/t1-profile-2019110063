@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Portfolio;
+namespace App\Http\Controllers\Index;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PortfolioController extends Controller
+class IndexController extends Controller
 {
-	protected $portfolio;
+	protected $index;
 
 	public function __construct()
 	{
@@ -15,6 +15,6 @@ class PortfolioController extends Controller
 
     public function index()
     {
-    	return view('portfolio',[]);
+    	return view('index',[]);
     }
 }

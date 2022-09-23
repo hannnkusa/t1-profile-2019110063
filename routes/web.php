@@ -14,12 +14,5 @@ use App\Http\Controllers\Portfolio\PortfolioController;
 |
 */
 
-Route::get('/', function () {
-	return view('index');
-});
-
+Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/portfolio',[PortfolioController::class,'index'])->name('portfolio');
-
-// Route::get('/portfolio', function () {
-// 	return view('portfolio');
-// });
